@@ -42,13 +42,13 @@ library(usethis)
 
 Data are stored in `/var/interact_data/`. You can't see the files locally like you would on your computer. Use `list.files` and `list.dir` to find the files. 
 
-```{r}
+```{r, eval = FALSE}
 list.files(path = "/var/interact_data")
 ```
 
 Now you have a list of files. You can read the files like your normally would. Let's say we want to read in the Victoria Table of Power file. 
 
-```{r}
+```{r, eval = FALSE}
 vic_w1_top <- read_csv("/var/interact_data/victoria_01_table_of_power_2020-01-10.csv")
 ```
 
@@ -58,7 +58,7 @@ If you want to configuring Git and connect with Github you can use functions fro
 
 1. Configure your user level Github credentials with `use_git_config`.
 
-```{r}
+```{r, eval = FALSE}
 use_git_config(
   scope = "user",
   user.name = "YOUR_USERNAME",
